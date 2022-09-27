@@ -5,3 +5,286 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+#qualities {
+    /* width: 837px; */
+    height: 298px;
+    border-radius: 25px;
+}
+
+#qualities h3  {
+    /* width: 281px; */
+    height: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#qualities button  {
+    width: 239.04px;
+    height: 49.86px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+#tel {
+    width: 148px;
+    height: 148px;
+}
+
+#mail {
+    width: 148px;
+    height: 148px;
+}
+
+#chat-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #000000;
+}
+
+#chat-sub-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+#support-heading {
+    /* width: 277px; */
+    height: 38px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #000000;
+}
+
+#support-sub-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+#availability h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #242424;
+}
+
+#availability p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #242424;
+}
+
+#trust h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #242424;
+}
+
+#trust p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #242424;
+}
+
+#speed h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #242424;
+}
+
+#speed p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #242424;
+}
+
+#hero h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56.7164px;
+    line-height: 71px;
+    color: #000000;
+}
+
+#hero p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+#accounts p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4A4A;
+}
+
+#chat p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4A4A;
+}
+
+#my-interest p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4A4A;
+}
+
+@media (max-width: 768px) {
+    #qualities {
+        width: 287px;
+        height: 314.6px;
+        border-radius: 50px;
+    }
+    #qualities h3  {
+        width: 211px;
+        height: 49px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    #qualities button  {
+        width: 235.75px;
+        height: 44.94px;
+        background: #FFFFFF;
+        border-radius: 10px;
+    }
+    #tel {
+        width: 61px;
+        height: 61px;
+    }
+    #mail {
+        width: 61px;
+        height: 61px;
+    }
+    #chat-heading {
+        /* width: 185px; */
+        height: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+    #chat-sub-heading {
+        /* width: 287px; */
+        /* height: 74px; */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+    #support-heading {
+        /* width: 185px; */
+        height: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+    #support-sub-heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+    #speed h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: #242424;
+    }
+
+    #speed p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #242424;
+    }
+
+    #hero h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        color: #000000;
+    }
+
+    #hero p {
+        /* width: 268px; */
+        /* height: 36px; */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: start;
+        color: #000000;
+    }
+}

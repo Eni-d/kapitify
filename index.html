@@ -16,7 +16,7 @@
 </head>
 <body class="bg-customBackground">
     <div class="bg-white p-5 lg:p-3 mt-0 lg:mt-10">
-        <nav class="container mx-auto flex flex-row justify-between items-center">
+        <nav class="flex flex-row justify-between items-center">
             <img src="img/menu.svg" alt="" srcset="">
             <img src="img/logo.svg" alt="" srcset="">
             <a href="" style="color: #070F1C;" class="font-bold block lg:hidden">Join</a>
@@ -26,15 +26,15 @@
                 </button>
                 <input type="text" placeholder="Find Item" class="border border-solid p-2 rounded w-96">
             </div>
-            <div id="accounts" class="lg:flex flex-row justify-center items-center hidden">
+            <div id="accounts" class="lg:flex flex-row justify-center items-center hidden space-x-2">
                 <img src="img/user.svg" alt="" srcset="">
                 <p class="text-customLightGray">Accounts</p>
             </div>
-            <div id="chat" class="lg:flex flex-row justify-center items-center hidden">
+            <div id="chat" class="lg:flex flex-row justify-center items-center hidden space-x-2">
                 <img src="img/chat.svg" alt="" srcset="">
                 <p class="text-customLightGray">Chat</p>
             </div>
-            <div id="my-interest" class="lg:flex flex-row justify-center items-center hidden">
+            <div id="my-interest" class="lg:flex flex-row justify-center items-center hidden space-x-2">
                 <img src="img/heart.svg" alt="" srcset="">
                 <p class="text-customLightGray">My Interest</p>
             </div>
@@ -42,40 +42,40 @@
     </div>
     <!-- Hero Caption -->
     <div id="hero" class="container mx-auto flex flex-col justify-between items-left lg:items-center mt-10 space-y-3 p-5 lg:p-0">
-        <h1 class="font-bold text-4xl">Need help?</h1>
-        <p class="w-80 lg:text-center font-medium">Efficient customer service to ensure the quality of our service</p>
+        <h1>Need help?</h1>
+        <p class="w-80 lg:text-center">Efficient customer service to ensure the quality of our service</p>
     </div>
     <!-- Qualities -->
-    <div id="qualities" class="container mx-auto flex flex-row justify-between items-center space-x-5 mt-20 rounded-md bg-customLightBlue p-3 text-center w-11/12 h-80 lg:w-auto lg:h-64">
-        <div id="speed" class="container mx-auto flex flex-col justify-between items-center">
-            <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14">
+    <div id="qualities" class="container mx-auto flex flex-row justify-between items-center space-x-5 mt-20 bg-customLightBlue p-3 text-center w-11/12 h-80 lg:w-auto lg:h-64">
+        <div id="speed" class="container mx-auto flex flex-col justify-between items-center space-y-3">
+            <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14 mb-2 lg:mb-0">
                 <img src="img/speed.svg" alt="" srcset="">
             </div>
             <h3 class="text-customGray font-bold text-xl lg:text-base">Speed</h3>
-            <p class="text-customGray font-medium w-64">Fast as Lightning, we'll answer you within a day</p>
+            <p>Fast as Lightning, we'll answer you within a day</p>
         </div>
-        <div id="trust" class="container mx-auto flex flex-col justify-between items-center hidden lg:block">
+        <div id="trust" class="container mx-auto flex flex-col justify-between items-center hidden lg:block space-y-3">
             <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14">
                 <img src="img/trust.svg" alt="" srcset="">
             </div>
             <h3 class="text-customGray font-bold text-base">Trust</h3>
-            <p class="text-customGray font-medium w-64">We are committed to finding you the ideal swapper</p>
+            <p>We are committed to finding you the ideal swapper</p>
         </div>
-        <div id="availability" class="container mx-auto flex flex-col justify-between items-center hidden lg:block">
+        <div id="availability" class="container mx-auto flex flex-col justify-between items-center hidden lg:block text-center space-y-3">
             <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14">
                 <img src="img/desk.svg" alt="" srcset="">
             </div>
             <h3 class="text-customGray font-bold text-base">Availability</h3>
-            <p class="text-customGray font-medium w-64">We are available 24/7</p>
+            <p>We are available 24/7</p>
         </div>
     </div>
     <!-- More -->
     <div class="container mx-auto flex flex-col justify-between items-center mt-10 space-y-10">
         <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center space-x-5 p-5 lg:p-0">
-            <img src="img/mail.svg" alt="" srcset="" class="mb-3 lg:mb-0 w-20 h-20 lg:w-auto lg:h-auto ml-4 lg:ml-0">
-            <div>
-                <h2 class="font-bold text-2xl">Let's chat by email</h2>
-                <p class="font-medium">For generai inquiries, partnerhip inquiries or media enquiries, send an email and we will be in touch as soon as possible.</p>
+            <img src="img/mail.svg" id="mail" alt="" srcset="" class="mb-3 lg:mb-0 w-20 h-20 lg:w-auto lg:h-auto ml-4 lg:ml-0">
+            <div class="flex flex-col justify-between items-start space-y-2">
+                <h2 id="chat-heading">Let's chat by email</h2>
+                <p id="chat-sub-heading">For generai inquiries, partnerhip inquiries or media enquiries, send an email and we will be in touch as soon as possible.</p>
                 <a href="" class="flex flex-row justify-start items-center space-x-2">
                     <img src="img/arrow.svg" alt="" srcset="">
                     <p class="text-customDarkBlue font-bold"> Send an email</p>
@@ -83,10 +83,10 @@
             </div>
         </div>
         <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center space-x-5 p-5 lg:p-0">
-            <img src="img/tel.svg" alt="" srcset="" class="mb-3 lg:mb-0 w-20 h-20 lg:w-auto lg:h-auto ml-4 lg:ml-0">
-            <div>
-                <h2 class="font-bold text-2xl">Customer Support</h2>
-                <p class="font-medium">Have questions, complaints or feature requests? Click to open a live chat and speak with one of our agents.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+            <img src="img/tel.svg" id="tel" alt="" srcset="" class="mb-3 lg:mb-0 ml-4 lg:ml-0">
+            <div class="flex flex-col justify-between items-start space-y-2">
+                <h2 id="support-heading">Customer Support</h2>
+                <p id="support-sub-heading">Have questions, complaints or feature requests? Click to open a live chat and speak with one of our agents.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                 <a href="" class="flex flex-row justify-start items-center space-x-2">
                     <img src="img/arrow.svg" alt="" srcset="">
                     <p class="text-customDarkBlue font-bold">Open live chat</p>
@@ -95,15 +95,15 @@
         </div>
     </div>
     <!-- Sign up -->
-    <div id="qualities" class="container mx-auto flex flex-col justify-center items-center space-y-5 mt-20 rounded-3xl lg:rounded-md bg-customDarkBlue p-3 text-center h-64 text-white w-11/12 h-80 lg:w-auto lg:h-64">
-        <h3 class="font-bold text-2xl">Start swapping with kapitify</h3>
-        <p>Create a free account in less than 5 minutes and start swapping!</p>
-        <button class="bg-white text-customDarkBlue rounded font-medium p-3 w-2/4">Sign up for free</button>
+    <div id="qualities" class="container mx-auto flex flex-col justify-center items-center space-y-5 mt-20 bg-customDarkBlue p-3 text-center text-white">
+        <h3>Start swapping with kapitify</h3>
+        <p class="font-14">Create a free account in less than 5 minutes and start swapping!</p>
+        <button class="text-customDarkBlue" style="border-radius: 10px;">Sign up for free</button>
     </div>
     <footer class="bg-white p-10 mt-10 hidden lg:block">
         <div class="flex flex-col justify-between items-start">
             <img src="img/logo.svg" alt="" srcset="">
-            <div class="float-left flex flex-row justify-between items-center space-x-3 mt-8">
+            <div class="float-left flex flex-row justify-between items-center space-x-8 mt-8">
                 <img src="img/twitter.svg" alt="" srcset="">
                 <img src="img/facebook.svg" alt="" srcset="">
                 <img src="img/insta.svg" alt="" srcset="">
@@ -111,71 +111,99 @@
         </div>
         <div class="flex flex-row justify-start items-start space-x-52 mt-10">
             <div class="flex flex-col justify-between items-left space-y-5">
-                <h3 class="font-bold text-2xl text-customDarkBlue">Products</h3>
-                <a href="" class="text-customExtraLightGray">How it works</a>
-                <a href="" class="text-customExtraLightGray">Features</a>
-                <a href="" class="text-customExtraLightGray">Browse Categories</a>
+                <h3 class="font-bold font-16 text-customDarkBlue">Products</h3>
+                <a href="" class="font-14 text-customExtraLightGray">How it works</a>
+                <a href="" class="font-14 text-customExtraLightGray">Features</a>
+                <a href="" class="font-14 text-customExtraLightGray">Browse Categories</a>
                 <div class="flex flex-row justify-between items-center space-x-2">
-                    <a href="" class="text-customExtraLightGray">Kapitify Pro</a>
-                    <p class="bg-customDarkBlue text-white rounded-full px-2 text-xs">Coming Soon</p>
+                    <a href="" class="font-14 text-customExtraLightGray">Kapitify Pro</a>
+                    <p class="bg-customDarkBlue text-white rounded-full p-2 flex flex-col justify-center items-center" style="font-size: 6.90411px; width: 63px; height: 17.26px;">Coming Soon</p>
                 </div>
             </div>
             <div class="flex flex-col justify-between items-left space-y-5">
-                <h3 class="font-bold text-2xl text-customDarkBlue">Support & Resources</h3>
-                <a href="" class="text-customExtraLightGray">Blog</a>
-                <a href="" class="text-customExtraLightGray">FAQs</a>
-                <a href="" class="text-customExtraLightGray">About Us</a>
-                <a href="" class="text-customExtraLightGray">Contact Us</a>
+                <h3 class="font-bold font-16 text-customDarkBlue">Support & Resources</h3>
+                <a href="" class="font-14 text-customExtraLightGray">Blog</a>
+                <a href="" class="font-14 text-customExtraLightGray">FAQs</a>
+                <a href="" class="font-14 text-customExtraLightGray">About Us</a>
+                <a href="" class="font-14 text-customExtraLightGray">Contact Us</a>
             </div>
             <div class="flex flex-col justify-between items-left space-y-5">
-                <h3 class="font-bold text-2xl text-customDarkBlue">Legal</h3>
-                <a href="" class="text-customExtraLightGray">Terms & Condition</a>
-                <a href="" class="text-customExtraLightGray">Privacy Policy</a>
+                <h3 class="font-bold font-16 text-customDarkBlue">Legal</h3>
+                <a href="" class="font-14 text-customExtraLightGray">Terms & Condition</a>
+                <a href="" class="font-14 text-customExtraLightGray">Privacy Policy</a>
             </div>
         </div>
         <div class="flex flex-col justify-between items-center mt-16 space-y-3">
-            <p class="text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
-            <p class="text-customExtraLightGray text-sm">Rights Reserved.</p>
+            <p class="font-14 text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
+            <p class="font-12 text-customExtraLightGray text-sm">Rights Reserved.</p>
         </div>
     </footer>
     <!-- Mobile Footer -->
     <footer class="bg-white p-10 mt-10 block lg:hidden">
         <div class="flex flex-col justify-between items-start">
             <img src="img/logo.svg" alt="" srcset="">
-            <div class="float-left flex flex-row justify-between items-center space-x-3 mt-8">
+            <div class="float-left flex flex-row justify-between items-center space-x-8 mt-8">
                 <img src="img/twitter.svg" alt="" srcset="">
                 <img src="img/facebook.svg" alt="" srcset="">
                 <img src="img/insta.svg" alt="" srcset="">
             </div>
         </div>
-        <div class="flex flex-col justify-between items-start space-y-10 mt-10">
-            <div class="flex flex-col justify-between items-left space-y-5">
-                <h3 class="font-bold text-2xl text-customDarkBlue">Products</h3>
-                <a href="" class="text-customExtraLightGray">How it works</a>
-                <a href="" class="text-customExtraLightGray">Features</a>
-                <a href="" class="text-customExtraLightGray">Browse Categories</a>
-                <div class="flex flex-row justify-between items-center space-x-2">
-                    <a href="" class="text-customExtraLightGray">Kapitify Pro</a>
-                    <p class="bg-customDarkBlue text-white rounded-full px-2 text-xs">Coming Soon</p>
+
+        <div class="flex flex-row justify-between item-center">
+            <div class="flex flex-col justify-between items-start space-y-10 mt-10">
+                <div class="flex flex-col justify-between items-left space-y-5">
+                    <h3 class="font-bold font-14 text-customDarkBlue">Products</h3>
+                    <a href="" class="font-14 text-customExtraLightGray">How it works</a>
+                    <a href="" class="font-14 text-customExtraLightGray">Features</a>
+                    <a href="" class="font-14 text-customExtraLightGray">Browse Categories</a>
+                    <a href="" class="font-14 text-customExtraLightGray">Kapitify Pro</a>
+                </div>
+                <div class="flex flex-col justify-between items-left space-y-5">
+                    <h3 class="font-bold font-14 text-customDarkBlue">Legal</h3>
+                    <a href="" class="font-14 text-customExtraLightGray">Terms & Condition</a>
+                    <a href="" class="font-14 text-customExtraLightGray">Privacy Policy</a>
                 </div>
             </div>
+            <div class="flex flex-col justify-start space-y-7 items-end mt-10">
+                <div class="flex flex-col justify-between items-end space-y-5">
+                    <h3 class="font-bold font-14 text-customDarkBlue">Support & Resources</h3>
+                    <a href="" class="font-14 text-customExtraLightGray">Blog</a>
+                    <a href="" class="font-14 text-customExtraLightGray">FAQs</a>
+                    <a href="" class="font-14 text-customExtraLightGray">About Us</a>
+                    <a href="" class="font-14 text-customExtraLightGray">Contact Us</a>
+                </div>
+                <div class="flex flex-col justify-between items-end space-y-3">
+                    <p class="font-14 text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
+                    <p class="font-12 text-customExtraLightGray text-sm">Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="flex flex-col justify-between items-start space-y-10 mt-10">
             <div class="flex flex-col justify-between items-left space-y-5">
-                <h3 class="font-bold text-2xl text-customDarkBlue">Support & Resources</h3>
-                <a href="" class="text-customExtraLightGray">Blog</a>
-                <a href="" class="text-customExtraLightGray">FAQs</a>
-                <a href="" class="text-customExtraLightGray">About Us</a>
-                <a href="" class="text-customExtraLightGray">Contact Us</a>
+                <h3 class="font-bold font-16 text-customDarkBlue">Products</h3>
+                <a href="" class="font-14 text-customExtraLightGray">How it works</a>
+                <a href="" class="font-14 text-customExtraLightGray">Features</a>
+                <a href="" class="font-14 text-customExtraLightGray">Browse Categories</a>
+                <a href="" class="font-14 text-customExtraLightGray">Kapitify Pro</a>
             </div>
             <div class="flex flex-col justify-between items-left space-y-5">
-                <h3 class="font-bold text-2xl text-customDarkBlue">Legal</h3>
-                <a href="" class="text-customExtraLightGray">Terms & Condition</a>
-                <a href="" class="text-customExtraLightGray">Privacy Policy</a>
+                <h3 class="font-bold font-16 text-customDarkBlue">Support & Resources</h3>
+                <a href="" class="font-14 text-customExtraLightGray">Blog</a>
+                <a href="" class="font-14 text-customExtraLightGray">FAQs</a>
+                <a href="" class="font-14 text-customExtraLightGray">About Us</a>
+                <a href="" class="font-14 text-customExtraLightGray">Contact Us</a>
+            </div>
+            <div class="flex flex-col justify-between items-left space-y-5">
+                <h3 class="font-bold font-16 text-customDarkBlue">Legal</h3>
+                <a href="" class="font-14 text-customExtraLightGray">Terms & Condition</a>
+                <a href="" class="font-14 text-customExtraLightGray">Privacy Policy</a>
             </div>
         </div>
         <div class="flex flex-col justify-between items-center mt-16 space-y-3">
-            <p class="text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
-            <p class="text-customExtraLightGray text-sm">Rights Reserved.</p>
-        </div>
+            <p class="font-14 text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
+            <p class="font-12 text-customExtraLightGray text-sm">Rights Reserved.</p>
+        </div> -->
     </footer>
 </body>
 </html>
