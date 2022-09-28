@@ -853,7 +853,7 @@ video {
 @font-face {
   font-family: "BR Firma";
 
-  src: url("BRFirma-Regular.ttf") format("truetype")
+  src: url("font/firma.otf") format("opentype")
 }
 
 body {
