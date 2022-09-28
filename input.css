@@ -2,8 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "CustomFont";
+    src: url("font/BR\ Firma\ Black.otf");
+    src: url("font/BR\ Firma\ Black.otf") format("woff"),
+    url("font/BR\ Firma\ Black.otf") format("opentype"),
+    url("font/BR\ Firma\ Black.otf") format("svg");
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'BR Firma';                                              
+}
+
+#search button {
+    width: 48.78px;
+    height: 44.6px;
+    border-radius: 4.18118px;
+}
+
+#search input {
+    width: 372px;
+    height: 45px;
+    border: 1.39373px solid #CACACA;
+    border-radius: 4.18118px;
+}
+
+.logo {
+    width: 94px;
+    height: 23.39px;
 }
 
 .font-22 {
@@ -99,6 +125,8 @@ body {
 }
 
 #availability p {
+    /* width: 214px;
+    height: 40px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -116,6 +144,8 @@ body {
 }
 
 #trust p {
+    /* width: 214px;
+    height: 40px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -133,6 +163,8 @@ body {
 }
 
 #speed p {
+    /* width: 214px;
+    height: 40px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -210,6 +242,86 @@ body {
         background: #FFFFFF;
         border-radius: 10px;
     }
+    #tel {
+        width: 61px;
+        height: 61px;
+    }
+    #mail {
+        width: 61px;
+        height: 61px;
+    }
+    #chat-heading {
+        /* width: 185px; */
+        height: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+    #chat-sub-heading {
+        /* width: 287px; */
+        /* height: 74px; */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+    #support-heading {
+        /* width: 185px; */
+        height: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+    }
+    #support-sub-heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+    #speed h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: #242424;
+    }
+
+    #speed p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #242424;
+    }
+
+    #hero h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        color: #000000;
+    }
+
+    #hero p {
+        /* width: 268px; */
+        /* height: 36px; */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: start;
+        color: #000000;
+    }
+}
+
+@media (max-width:810px) {
     #tel {
         width: 61px;
         height: 61px;
