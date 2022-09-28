@@ -3,15 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "CustomFont";
-    src: url("font/BR\ Firma\ Black.otf");
-    src: url("font/BR\ Firma\ Black.otf") format("woff"),
-    url("font/BR\ Firma\ Black.otf") format("opentype"),
-    url("font/BR\ Firma\ Black.otf") format("svg");
+    font-family: "BR Firma";
+    src: url("font/firma.otf") format("opentype")
 }
 
 body {
     font-family: 'BR Firma';                                              
+}
+
+#join {
+    width: 36px;
+    height: 23.39px;
+    font-family: 'BR Firma';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #search button {
