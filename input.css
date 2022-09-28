@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "BR Firma";
-    src: url("./font/firma.otf") format("opentype")
+    src: url("BRFirma-Regular.ttf") format("truetype")
 }
 
 body {
