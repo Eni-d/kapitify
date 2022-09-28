@@ -7,7 +7,7 @@
     src: url("font/firma.otf") format("opentype")
 }
 
-body {
+html {
     font-family: 'BR Firma', sans-serif;                                              
 }
 
