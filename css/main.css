@@ -860,15 +860,15 @@ body {
   font-family: 'BR Firma', sans-serif;
 }
 
-#join {
-  width: 36px;
-  height: 23.39px;
-  font-family: 'BR Firma';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-}
+/* #join {
+    width: 36px;
+    height: 23.39px;
+    font-family: 'BR Firma';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+} */
 
 #search button {
   width: 48.78px;
