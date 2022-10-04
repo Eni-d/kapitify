@@ -15,8 +15,10 @@ module.exports = {
         customBlue: "#06335B42",
         customDarkBlue: "#06335B",
         customGray: "#242424",
-        customLightGray: "#4A4A4A",
+        customLightGray: "#333333",
+        // customLightGray: "#4A4A4A",
         customExtraLightGray: "#4B4B4B",
+        customLocation: "#57CC99",
       }
     },
   },

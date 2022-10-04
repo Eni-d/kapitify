@@ -11,6 +11,29 @@ html {
     font-family: 'BR Firma', sans-serif;                                              
 }
 
+/* #join {
+    width: 36px;
+    height: 23.39px;
+    font-family: 'BR Firma';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+} */
+
+#search button {
+    width: 48.78px;
+    height: 44.6px;
+    border-radius: 4.18118px;
+}
+
+#search input {
+    width: 372px;
+    height: 45px;
+    border: 1.39373px solid #CACACA;
+    border-radius: 4.18118px;
+}
+
 .logo {
     width: 94px;
     height: 23.39px;
@@ -18,14 +41,6 @@ html {
 
 .font-22 {
     font-size: 22px;
-}
-
-.font-20 {
-    font-size: 20px;
-}
-
-.font-18 {
-    font-size: 18px;
 }
 
 .font-16 {
@@ -36,149 +51,18 @@ html {
     font-size: 14px;
 }
 
-.font-13 {
-    font-size: 13px;
-}
-
 .font-12 {
     font-size: 12px;
-}
-
-.font-11 {
-    font-size: 11px;
-}
-
-.font-12 {
-    font-size: 12px;
-}
-
-.fw-400 {
-    font-weight: 400;
-}
-
-.fw-500 {
-    font-weight: 500;
-}
-
-.fw-700 {
-    font-weight: 700;
-}
-
-.r-14 {
-    border-radius: 14.5px;
-}
-
-.r-20 {
-    border-radius: 20px;
-}
-
-.container {
-    max-width: 94%;
-}
-
-.card {
-    background: #FFFFFF;
-    box-shadow: 0px 5.79061px 14.4765px rgba(0, 0, 0, 0.2);
-    border-radius: 14.4765px;
-}
-
-.shadow {
-    box-shadow: 0px 5.79061px 14.4765px rgba(0, 0, 0, 0.2);
-}
-
-.h-163 {
-    height: 163px;
-}
-
-.h-336 {
-    height: 336px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.logo {
-    width: 94px;
-    height: 23.39px;
 }
 
 #qualities {
+    /* width: 837px; */
     height: 298px;
     border-radius: 25px;
 }
 
 #qualities h3  {
+    /* width: 281px; */
     height: 25px;
     font-style: normal;
     font-weight: 600;
@@ -222,6 +106,7 @@ html {
 }
 
 #support-heading {
+    /* width: 277px; */
     height: 38px;
     font-style: normal;
     font-weight: 600;
@@ -247,6 +132,8 @@ html {
 }
 
 #availability p {
+    /* width: 214px;
+    height: 40px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -264,6 +151,8 @@ html {
 }
 
 #trust p {
+    /* width: 214px;
+    height: 40px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -281,6 +170,8 @@ html {
 }
 
 #speed p {
+    /* width: 214px;
+    height: 40px; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -304,6 +195,36 @@ html {
     line-height: 23px;
     text-align: center;
     color: #000000;
+}
+
+#accounts p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4A4A;
+}
+
+#chat p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4A4A;
+}
+
+#my-interest p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #4A4A4A;
 }
 
 @media (max-width: 768px) {
@@ -337,6 +258,7 @@ html {
         height: 61px;
     }
     #chat-heading {
+        /* width: 185px; */
         height: 25px;
         font-style: normal;
         font-weight: 700;
@@ -345,6 +267,8 @@ html {
         color: #000000;
     }
     #chat-sub-heading {
+        /* width: 287px; */
+        /* height: 74px; */
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -352,6 +276,7 @@ html {
         color: #000000;
     }
     #support-heading {
+        /* width: 185px; */
         height: 25px;
         font-style: normal;
         font-weight: 700;
@@ -392,6 +317,8 @@ html {
     }
 
     #hero p {
+        /* width: 268px; */
+        /* height: 36px; */
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -411,6 +338,7 @@ html {
         height: 61px;
     }
     #chat-heading {
+        /* width: 185px; */
         height: 25px;
         font-style: normal;
         font-weight: 700;
@@ -419,6 +347,8 @@ html {
         color: #000000;
     }
     #chat-sub-heading {
+        /* width: 287px; */
+        /* height: 74px; */
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -426,6 +356,7 @@ html {
         color: #000000;
     }
     #support-heading {
+        /* width: 185px; */
         height: 25px;
         font-style: normal;
         font-weight: 700;
@@ -466,6 +397,8 @@ html {
     }
 
     #hero p {
+        /* width: 268px; */
+        /* height: 36px; */
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -474,6 +407,3 @@ html {
         color: #000000;
     }
 }
-
-
-

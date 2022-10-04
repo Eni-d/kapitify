@@ -17,87 +17,670 @@
         <nav class="flex flex-row justify-between items-center">
             <img src="img/menu.svg" alt="" srcset="" id="menu">
             <img src="img/logo.svg" alt="" srcset="" class="logo">
-            <a href="" style="color: #070F1C;" class="font-bold block lg:hidden" id="join">Join</a>
+            <!-- <a href="" style="color: #070F1C;" class="font-bold block lg:hidden" id="join">Join</a> -->
+            <img src="img/user.svg" alt="" srcset="" class="block lg:hidden">
             <div id="search" class="lg:flex flex-row justify-center items-center hidden">
-                <button class="bg-customDarkBlue flex flex-col justify-center items-center">
+                <button class="bg-customDarkBlue flex flex-col justify-center items-center p-2 rounded" style="height: 42px;">
                     <img src="img/search.svg" alt="" srcset="">
                 </button>
-                <input type="text" placeholder="Find Item" class="border border-solid p-2 rounded w-96">
+                <input type="text" placeholder="Find Item" class="border border-solid p-2 rounded w-96" style="height: 42px;">
             </div>
-            <div id="accounts" class="lg:flex flex-row justify-center items-center hidden space-x-2">
-                <img src="img/user.svg" alt="" srcset="">
-                <p class="text-customLightGray">Accounts</p>
-            </div>
-            <div id="chat" class="lg:flex flex-row justify-center items-center hidden space-x-2">
-                <img src="img/chat.svg" alt="" srcset="">
-                <p class="text-customLightGray">Chat</p>
-            </div>
-            <div id="my-interest" class="lg:flex flex-row justify-center items-center hidden space-x-2">
-                <img src="img/heart.svg" alt="" srcset="">
-                <p class="text-customLightGray">My Interest</p>
-            </div>
+            <a href="" id="accounts" class="lg:flex flex-row justify-center items-center hidden space-x-2">
+                <img src="img/user.svg" alt="" srcset="" style="height: 16.11px; width: 16.11px;">
+                <p class="text-customLightGray fw-500 font-13">Accounts</p>
+            </a>
+            <a href="" id="chat" class="lg:flex flex-row justify-center items-center hidden space-x-2">
+                <img src="img/chat.svg" alt="" srcset="" style="height: 16.11px; width: 16.11px;">
+                <p class="text-customLightGray fw-500 font-13">Chat</p>
+            </a>
+            <a href="" id="my-interest" class="lg:flex flex-row justify-center items-center hidden space-x-2">
+                <img src="img/heart.svg" alt="" srcset="" style="height: 16.11px; width: 16.11px;">
+                <p class="text-customLightGray fw-500 font-13">My Interest</p>
+            </a>
         </nav>
     </div>
-    <!-- Hero Caption -->
-    <div id="hero" class="container mx-auto flex flex-col justify-between items-left lg:items-center mt-5 lg:mt-10 space-y-3 p-5 lg:p-0">
-        <h1>Need help?</h1>
-        <p class="w-80 lg:text-center">Efficient customer service to ensure the quality of our service</p>
-    </div>
-    <!-- Qualities -->
-    <div id="qualities" class="container mx-auto flex flex-row justify-between items-center space-x-5 mt-5 lg:mt-20 bg-customLightBlue p-3 text-center w-11/12 h-80 lg:w-auto lg:h-64">
-        <div id="speed" class="container mx-auto flex flex-col justify-between items-center space-y-3">
-            <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14 mb-2 lg:mb-0">
-                <img src="img/speed.svg" alt="" srcset="">
-            </div>
-            <h3 class="text-customGray font-bold text-xl lg:text-base">Speed</h3>
-            <p>Fast as Lightning, we'll answer you within a day</p>
+    <!-- Hero -->
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between space-x-3 items-center mt-5">
+        <div class="hidden lg:flex flex-col justify-between items-start text-customLightGray fw-400 font-14 r-14 bg-white p-5 w-72 h-336">
+            <a href="">Art</a>
+            <a href="">Books & Comics</a>
+            <a href="">Clothing & Accessories</a>
+            <a href="">Collectibles</a>
+            <a href="">Computing</a>
+            <a href="">Consumer Electronics</a>
+            <a href="">Phones</a>
+            <a href="">Tablet</a>
+            <a href="">Consoles</a>
+            <a href="">Music</a>
+            <a href="">Automobiles</a>
+            <a href="">School Accessories</a>
         </div>
-        <div id="trust" class="container mx-auto flex flex-col justify-between items-center hidden lg:block space-y-3">
-            <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14">
-                <img src="img/trust.svg" alt="" srcset="">
-            </div>
-            <h3 class="text-customGray font-bold text-base">Trust</h3>
-            <p>We are committed to finding you the ideal swapper</p>
+        <div>
+            <img src="img/hero.png" alt="" width="584" height="336" class="hidden lg:block">
+            <img src="img/hero.png" alt="" width="584" height="336" class="block lg:hidden">
         </div>
-        <div id="availability" class="container mx-auto flex flex-col justify-between items-center hidden lg:block text-center space-y-3">
-            <div class="container mx-auto flex flex-row justify-center items-center bg-white rounded-full p-3 w-14 h-14">
-                <img src="img/desk.svg" alt="" srcset="">
-            </div>
-            <h3 class="text-customGray font-bold text-base">Availability</h3>
-            <p>We are available 24/7</p>
+        <div class="hidden lg:flex flex-col justify-between items-center space-y-3">
+            <div class="flex flex-col justify-between items-start text-customLightGray fw-400 font-14 r-14 bg-white p-5 h-163 w-72"></div>
+            <div class="flex flex-col justify-between items-start text-customLightGray fw-400 font-14 r-14 bg-white p-5 h-163 w-72"></div>
         </div>
-    </div>
-    <!-- More -->
-    <div class="container mx-auto flex flex-col justify-between items-center mt-5 lg:mt-10  lg:space-y-10">
-        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center space-x-5 p-5 lg:p-0">
-            <img src="img/mail.svg" id="mail" alt="" srcset="" class="mb-3 lg:mb-0 w-20 h-20 lg:w-auto lg:h-auto ml-4 lg:ml-0">
-            <div class="flex flex-col justify-between items-start space-y-2">
-                <h2 id="chat-heading">Let's chat by email</h2>
-                <p id="chat-sub-heading">For general inquiries, partnerhip inquiries or media enquiries, send an email and we will be in touch as soon as possible.</p>
-                <a href="" class="flex flex-row justify-start items-center space-x-2">
-                    <img src="img/arrow.svg" alt="" srcset="">
-                    <p class="text-customDarkBlue font-bold"> Send an email</p>
-                </a>
+        <div class="lg:hidden flex flex-row justify-between items-center space-x-24 mt-5">
+            <div class="border border-solid border-gray-400 rounded flex flex-row justify-center items-center" style="height: 43px; width: 128.15px;">
+                <img src="img/gps.svg" alt="">
+                <p class="fw-400 font-12">Location</p>
             </div>
-        </div>
-        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center space-x-5 p-5 lg:p-0">
-            <img src="img/tel.svg" id="tel" alt="" srcset="" class="mb-3 lg:mb-0 ml-4 lg:ml-0">
-            <div class="flex flex-col justify-between items-start space-y-2">
-                <h2 id="support-heading">Customer Support</h2>
-                <p id="support-sub-heading">Have questions, complaints or feature requests? Click to open a live chat and speak with one of our agents.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-                <a href="" class="flex flex-row justify-start items-center space-x-2">
-                    <img src="img/arrow.svg" alt="" srcset="">
-                    <p class="text-customDarkBlue font-bold">Open live chat</p>
-                </a>
+            <div class="border border-solid border-gray-400 rounded flex flex-row justify-center items-center" style="height: 43px; width: 128.15px;">
+                <img src="img/sort.svg" alt="">
+                <p class="fw-400 font-12">Sort</p>
             </div>
         </div>
     </div>
-    <!-- Sign up -->
-    <div id="qualities" class="container mx-auto flex flex-col justify-center items-center space-y-5 mt-5 lg:mt-20 bg-customDarkBlue p-3 text-center text-white">
-        <h3>Start swapping with kapitify</h3>
-        <p class="font-14" style="font-weight: 500;">Create a free account in less than 5 minutes and start swapping!</p>
-        <button class="text-customDarkBlue" style="border-radius: 10px;">Sign up for free</button>
+    <!-- Recommended -->
+    <div class="bg-white fw-700 font-16 mt-5 r-20">
+        <div class="container mx-auto flex flex-row justify-between items-center text-customDarkBlue">
+            <a href="" class="mt-5">Recommended</a>
+            <div class="flex flex-row justify-between items-center space-x-2 mt-5">
+                <a href="">See All</a>
+                <img src="img/gt.svg" alt="">
+            </div>
+        </div>
+        <div class="container slide ml-auto flex flex-row justify-between items-center mt-8">
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/verified.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5 lg:block hidden">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5 lg:block hidden">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5 lg:block hidden">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Discover -->
+    <div class="bg-white fw-700 font-16 mt-5 r-20">
+        <div class="container mx-auto flex flex-row justify-between items-center text-customDarkBlue">
+            <a href="" class="mt-5">Discover Swaps</a>
+            <div class="flex flex-row justify-between items-center space-x-2 mt-5">
+                <a href="">See All</a>
+                <img src="img/gt.svg" alt="">
+            </div>
+        </div>
+        <div class="container slide ml-auto hidden lg:flex flex-row flex-wrap lg:flex-nowrap justify-between items-center mt-8">
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/verified.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="slide ml-auto lg:hidden flex flex-row flex-wrap justify-between items-center mt-8">
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/verified.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Open Offers -->
+    <div class="bg-white fw-700 font-16 mt-5 r-20">
+        <div class="flex flex-row justify-between items-center bg-customDarkBlue text-white p-3">
+            <div class="flex flex-row justify-between items-center space-x-2">
+                <a href="">Open Offers</a>
+                <img src="img/offers.svg" alt="">
+            </div>
+            <div class="flex flex-row justify-between items-center space-x-2">
+                <a href="">See All</a>
+                <img src="img/gt2.svg" alt="">
+            </div>
+        </div>
+        <div class="container slide ml-auto hidden lg:flex flex-row flex-wrap lg:flex-nowrap justify-between items-center mt-8">
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/verified.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="slide ml-auto lg:hidden flex flex-row flex-wrap justify-between items-center mt-8">
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/verified.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white card mb-5">
+                <img src="img/popular.svg" alt="" class="absolute ml-5 mt-2">
+                <img src="img/verified.png" alt="">
+                <div class="shadow rounded-full p-4 bg-white flex flex-col justify-center items-center float-right relative -top-5 right-5">
+                    <img src="img/heart.svg" alt="">
+                </div>
+                <div class="ml-4">
+                    <div class="flex flex-row justify-start items-center space-x-1 mt-3">
+                        <img src="img/star.svg" alt="">
+                        <p class="fw-500 text-sm">(3)</p>
+                    </div>
+                    <p class="fw-500">Iphone XR-</p>
+                    <p class="fw-500"><b>Swap </b>for Anything</p>
+                    <div class="flex flex-row justify-start items-center mb-5">
+                        <img src="img/location.svg" alt="">
+                        <p class="text-customLocation fw-500 font-11">Benin City, Edo State</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Swappers -->
+    <div class="bg-white fw-700 font-16 mt-5 r-20 pb-5">
+        <div class="container mx-auto flex flex-row justify-start items-center space-x-2 text-customGray">
+            <a href="" class="mt-5">Popular Swappers</a>
+            <img src="img/safety.svg" alt="" class="mt-5">
+        </div>
+        <div class="container slide ml-auto hidden lg:flex flex-row flex-wrap lg:flex-nowrap justify-between items-center mt-8">
+            <!-- Swapper -->
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper1.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Ellie</p>
+                <p class="font-18 fw-500">Huston</p>
+            </div>
+            <!--Swapper  -->
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper2.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Zackary</p>
+                <p class="font-18 fw-500">Washington</p>
+            </div>
+            <!--Swapper  -->
+            <div class="flex flex-col justify-center items-center mt-10 lg:mt-0">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper3.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Zackary</p>
+                <p class="font-18 fw-500">Washington</p>
+            </div>
+            <!--Swapper  -->
+            <div class="flex flex-col justify-center items-center mt-10 lg:mt-0">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper4.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Zackary</p>
+                <p class="font-18 fw-500">Washington</p>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="slide ml-auto lg:hidden flex flex-row flex-wrap justify-between items-center mt-8">
+            <!-- Swapper -->
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper1.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Ellie</p>
+                <p class="font-18 fw-500">Huston</p>
+            </div>
+            <!--Swapper  -->
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper2.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Zackary</p>
+                <p class="font-18 fw-500">Washington</p>
+            </div>
+            <!--Swapper  -->
+            <div class="flex flex-col justify-center items-center mt-10 lg:mt-0">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper3.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Zackary</p>
+                <p class="font-18 fw-500">Washington</p>
+            </div>
+            <!--Swapper  -->
+            <div class="flex flex-col justify-center items-center mt-10 lg:mt-0">
+                <div class="flex flex-row justify-center items-center">
+                    <img src="img/swapper4.png" alt="" class="lg:ml-10">
+                    <div class="rounded-full bg-white flex flex-col justify-center items-center relative bottom-12 right-6">
+                        <img src="img/online.svg" alt="">
+                    </div>
+                </div>
+                <p class="font-18 fw-500">Zackary</p>
+                <p class="font-18 fw-500">Washington</p>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="bg-white p-10 mt-10 hidden lg:block">
         <div class="flex flex-col justify-between items-start">
             <img src="img/logo.svg" alt="" srcset="" class="logo">
@@ -123,7 +706,7 @@
                 <a href="" class="font-14 text-customExtraLightGray">Blog</a>
                 <a href="" class="font-14 text-customExtraLightGray">FAQs</a>
                 <a href="" class="font-14 text-customExtraLightGray">About Us</a>
-                <a href="" class="font-14 text-customExtraLightGray">Contact Us</a>
+                <a href="/contact.html" class="font-14 text-customExtraLightGray">Contact Us</a>
             </div>
             <div class="flex flex-col justify-between items-left space-y-5">
                 <h3 class="font-bold font-16 text-customDarkBlue">Legal</h3>
@@ -170,11 +753,15 @@
                     <a href="" class="font-14 text-customExtraLightGray">About Us</a>
                     <a href="" class="font-14 text-customExtraLightGray">Contact Us</a>
                 </div>
-                <div class="flex flex-col justify-between items-end space-y-3">
+                <!-- <div class="flex flex-col justify-between items-end space-y-3">
                     <p class="font-14 text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
                     <p class="font-12 text-customExtraLightGray text-sm">Rights Reserved.</p>
-                </div>
+                </div> -->
             </div>
+        </div>
+        <div class="flex flex-col justify-between items-center space-y-3 mt-16">
+            <p class="font-14 text-customExtraLightGray">&copy; 2022 Kapitify Labs</p>
+            <p class="font-12 text-customExtraLightGray text-sm">Rights Reserved.</p>
         </div>
     </footer>
 </body>
